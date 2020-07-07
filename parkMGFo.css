@@ -1,0 +1,78 @@
+*{padding: 0; margin: 0; font-family: 'Cabin', sans-serif;}
+
+/* side-nav */
+#side-nav {position: fixed; left: -300px; top: 0; width: 300px; height: 100vh; 
+    background: rgba(255,255,255,0.3); /* transition: left 0.3s ease-in-out; */}
+#side-nav.open {left: 0px;}
+#side-nav h1 {padding: 60px 20px 40px 20px; color: #fff; font-size: 40px; font-family: 'Abel'; text-align: center;text-shadow: 0 1px 1px rgba(0,0,0,0.2);}
+#side-nav li {border-left: 5px solid transparent;}
+#side-nav li a {text-decoration: none;padding: 14px 20px;display: block;text-transform: uppercase;color: #fff;text-shadow: 0 1px 1px rgba(0,0,0,0.2);}
+#side-nav li:hover {background: rgba(223, 221, 221, 0.4);border-left: 5px solid #fff;}
+#side-nav .navBtn {
+    position: absolute; right: -60px; top: 10px;
+    display: block; width: 50px; height: 50px;
+    background: rgba(255,255,255,0.4);
+    border-radius: 50%;
+    text-align: center; line-height: 50px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 13px;
+}
+
+/* cart */
+.cart{width: 100%;background:#22272b; overflow: hidden;}
+.containerFo{width: 100%; margin: 0 auto; min-height: 600px; width: 1000px;}
+.containerHe{height: 50px; border-bottom: 0.1px solid rgba(204, 204, 204, 0.205);}
+.containerHe p{color: #fff; float: right; padding: 15px;}
+.containerSe{float: left; width: 600px;  margin: 0 auto; padding: 50px 0 50px 0; }
+.containerSeTo{float: left; width: 400px; min-height: 200px;  padding: 170px 0;}
+
+.conSeDiv{width: 100%; height: 150px;}
+.divImg{float: left; width: 120px; height: 120px; margin: 15px 0px 0 33px;}
+.imgconn{width: 100%; height: inherit; background-size: contain; border-radius: 50%;}
+.divcontent{width: 100%; height: 33.333%; line-height: 40px; text-align: center; color: white;}
+.divCoiunt{width: 50px; height: 50px; border: 1px solid rgba(204, 204, 204, 0.205); margin: 30px 5px 0 70px; 
+    text-align: center; line-height: 50px; color: white;}
+.price{font-size: 25px;}
+
+.totalPrice{font-size: 35px; font-weight: bold; text-align: center; color: #fff;}
+.daler{font-size: 30px; margin: 15px 0;}
+.pays{font-size: 10px; line-height: 50px; background: rgb(255, 255, 255); height: 50px; ;width: 90%;margin: 0 auto; 
+    width: 100; border: 0px; background:#000000; color: #fff; } 
+.continue{font-size: 10px; line-height: 50px; background: rgb(255, 255, 255); height: 50px; ;width: 90%;margin: 12px auto; color: black;}
+.continues{font-size: 10px; line-height: 50px; background: rgb(255, 255, 255); height: 50px; ;width: 90%;margin: 0 auto; 
+    width: 100%; border: 0px; background:#ffffff; color: rgb(5, 5, 5); }
+
+@media (max-width:1024px){
+    .containerSe{height: 800px; padding: 90px 0 0px 0; width: 520px;}
+    .containerFo{width: 48%;}
+    .containerSeTo{width: 100%; border-top: 1px solid white; padding: 80px 0;}
+}
+
+@media (max-width:768px){
+    .containerFo{width: 62%;}
+
+    .containerSeTo{width: 100%;}
+}
+
+@media (max-width:500px){
+    .containerSeTo{clear: both; float: none; margin: 0 40px; min-height: 0px;  padding: 30px 0px;
+        width: 400px; border-top: 1px solid white;}
+        .containerSeTo{width: 260px;}
+}
+
+@media (max-width: 414px) {
+    .containerFo{width: 78%;}
+    .divImg{width: 80px; height: 80px; margin: 12px 0px 0 25px; }
+    .divCoiunt{width: 40px; height: 40px; line-height: 40px; margin: 30px 5px 0 30px; }
+    .containerSeTo{width: 260px;}
+}
+
+
+
+@media (max-width:375px){
+    .containerFo{width: 88%;}
+    .divImg{width: 80px; height: 80px; margin: 12px 0px 0 25px; }
+    .divCoiunt{width: 40px; height: 40px; line-height: 40px; margin: 30px 5px 0 30px; }
+    .containerSeTo{width: 260px;}
+}

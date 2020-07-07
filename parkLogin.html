@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="parkLogin.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cabin&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="rrap">
+        <header>ParkMG</header>
+        <section id="contents">
+            <div class="cont1">
+                <div class="tab-menu">
+                    <div class="tab-btn">
+                        <ul>
+                            <li class="active"><a href="#">로그인</a></li>
+                            <li><a href="#">비회원구매확인</a></li>
+                        </ul>
+                    </div>
+                    <div class="tab-cont">
+                        <div class="tabcont1">
+                            <input type="text" placeholder="아이디">
+                            <input type="password" placeholder="비밀번호">
+                            <button type="button">로그인</button>
+                        </div>
+                        <div>2.Tab Menu EESC
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script>
+        var tabBtn = $(".tab-btn > ul > li");
+        var tabCont = $(".tab-cont > div");
+
+        tabCont.hide().eq(0).show();
+
+        tabBtn.click(function(e){
+            e.preventDefault();
+            var terget = $(this);
+            var index = terget.index();
+            tabBtn.removeClass("active");
+            terget.addClass("active");
+            tabCont.css("display", "none");
+            tabCont.eq(index).css("display", "block");
+        });
+
+
+    </script>
+
+
+</body>
+</html>
